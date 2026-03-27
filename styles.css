@@ -1,0 +1,75 @@
+.focus-visible { outline: 2px solid #005fcc; outline-offset: 2px; }
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #005fcc;
+}
+
+/* Color Contrast Compliance */
+.a11y-text {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+}
+
+/* Support for prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0s;
+        transition-duration: 0s;
+    }
+}
+
+/* Support for prefers-contrast media queries */
+@media (prefers-contrast: more) {
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+/* Accessible Form Styling */
+input, textarea, select {
+    border: 2px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #005fcc;
+    background-color: #f0f8ff;
+}
+
+button {
+    background-color: #005fcc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    outline: 2px solid #005fcc;
+}
+
+button:hover {
+    background-color: #004bb5;
+}
